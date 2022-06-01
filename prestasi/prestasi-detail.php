@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Event | Politeknik Negeri Bandung</title>
+  <title>Berita | Politeknik Negeri Bandung</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -70,13 +70,13 @@
             <ul>
               <li><a href="../berita/berita_home.php">Berita</a></li>
               <li><a href="../fasilitas/fasilitas.php">Fasilitas</a></li>
-              <li><a href="event_home.php">Event</a></li>
+              <li><a href="../event/event_home.php">Event</a></li>
               <li><a href="../galeri/galeri.php">Galeri</a></li>
               <li class="dropdown"><a href="#"><span>Prestasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../prestasi/mahasiswa-berprestasi.php">Mahasiswa Berprestasi</a></li>
-                  <li><a href="../prestasi/penghargaan.php">Penghargaan</a></li>
-                  <li><a href="../prestasi/program-kreativitas-mahasiswa.php">Program Kreativitas Mahasiswa</a></li>
+                  <li><a href="mahasiswa-berprestasi.php">Mahasiswa Berprestasi</a></li>
+                  <li><a href="penghargaan.php">Penghargaan</a></li>
+                  <li><a href="program-kreativitas-mahasiswa.php">Program Kreativitas Mahasiswa</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Pegawai</span> <i class="bi bi-chevron-right"></i></a>
@@ -97,7 +97,7 @@
   <!-- ======= Slider Section ======= -->
   <section id="hero" style="background-attachment: relative;" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1 class="d-flex justify-content-center">Detail<span>&nbsp;Event</span></h1>
+      <h1 class="d-flex justify-content-center">Detail<span>&nbsp;Prestasi</span></h1>
     </div>
   </section><!-- End Slider -->
 
@@ -108,11 +108,11 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Detail Event</h2>
+          <h2>Detail Prestasi</h2>
           <ol>
-            <li><a href="index.php">Beranda</a></li>
-            <li>Event</li>
-            <li id="bc_title">:title</li>
+            <li><a href="../index.php">Beranda</a></li>
+            <li>Prestasi</li>
+            <li id="ps_title">:title</li>
           </ol>
         </div>
       </div>
@@ -128,20 +128,20 @@
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
-                  <img id="berita_img" src="../assets/img/portfolio/portfolio-details-1.jpg" alt="">
+                  <img src="../assets/img/portfolio/portfolio-details-1.jpg" id="prestasi_img" alt="">
               </div>
               <div class="swiper-pagination"></div>
             </div>
             <div class="portfolio-description">
-              <h2 id="berita_judul">aaa</h2>
-              <p id="berita_text" style="text-align: justify;">
+              <h2 id="prestasi_judul">aaa</h2>
+              <p id="prestasi_text" style="text-align: justify;">
                 aaa
               </p>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>About Event</h3>
+              <h3>About News</h3>
               <ul>
                 <li id="author"></li>
                 <li id="published"></li>
@@ -244,27 +244,29 @@
   window.onload = callAllFunc();
 
   function callAllFunc(){
-    event();
+    prestasi();
   }
 
   function formatMyDate(value, locale = 'en-GB') {
     return new Date(value).toLocaleDateString(locale);
   }
 
-  async function event() {
+  async function prestasi() {
       // fetch data
-      let response = await fetch(web_strapi + '/events/' + id);
+      let response = await fetch(web_strapi + '/prestasis/' + id);
       let data = await response.json();
       const regex = /\\n|\\r\\n|\\n\\r|\\r/g;
       // set data
-      document.getElementById("berita_judul").innerHTML = data.judul_agenda;
-      document.getElementById("bc_title").innerHTML = data.judul_agenda;
-      document.getElementById("author").innerHTML = "Author : Manajemen JTK";
-      let deskripsi = JSON.stringify(data.keterangan);
+      console.log(data);
+      document.getElementById("prestasi_judul").innerHTML = data.judul;
+      document.getElementById("ps_title").innerHTML = data.judul;
+      document.getElementById("author").innerHTML = "Author : " + data.Author;
+      document.getElementById("prestasi_img").src = web_strapi + data.attachment.url;
+
+      let deskripsi = JSON.stringify(data.deskripsi);
       let deskripsi_replace = deskripsi.replace(regex, '<br>'); 
       let result = deskripsi_replace.replace(/\“|\"/gi,'');
-      document.getElementById("berita_text").innerHTML = result;
-      document.getElementById("berita_img").src = web_strapi + data.attachment[0].url;
+      document.getElementById("prestasi_text").innerHTML = result ;    
       document.getElementById("published").innerHTML = "Published : " + formatMyDate(data.published_at);
   }
 

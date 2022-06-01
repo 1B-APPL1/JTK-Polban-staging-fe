@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Berita | Politeknik Negeri Bandung</title>
+  <title>Arsip Kerjasama | Politeknik Negeri Bandung</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -65,11 +65,11 @@
           <li><a class="nav-link" href="../index.php">Beranda</a></li>
           <li><a class="nav-link" href="../profil/profil-jurusan.php">Tentang JTK</a></li>
           <li><a class="nav-link" href="../kurikulum/d3-2016.php">Akademik</a></li>
-          <li><a class="nav-link " href="../mitra/arsip-kerja-sama.php">Mitra</a></li>
+          <li><a class="nav-link active" href="arsip-kerja-sama.php">Mitra</a></li>
           <li><a class="nav-link" href="../lulusan/d3.php">Lulusan</a></li>
-          <li class="dropdown"><a href="#" class="nav-link active"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="berita_home.php">Berita</a></li>
+              <li><a href="../berita/berita_home.php">Berita</a></li>
               <li><a href="../fasilitas/fasilitas.php">Fasilitas</a></li>
               <li><a href="../event/event_home.php">Event</a></li>
               <li><a href="../galeri/galeri.php">Galeri</a></li>
@@ -98,7 +98,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1 id="judul_utama" class="d-flex justify-content-center">Halaman<span>&nbsp Berita</span></h1>
+      <h1 id="judul_utama" class="d-flex justify-content-center">Kerja<span>&nbsp Sama</span></h1>
     </div>
   </section><!-- End Hero -->
  
@@ -115,7 +115,7 @@
                     <div class="row">
                       <div class="col-md-12">
                         <div class="mu-latest-course-single">
-                          <h2><a href="#">Berita Terbaru</a></h2>
+                          <h2><a href="#">Arsip Kerjasama</a></h2>
                           <hr align="left">
                           <!-- ======= Arsip Section ======= -->
                           <section id="about" class="about" style="padding-top: 1%;">
@@ -123,14 +123,14 @@
                               
                               <div class="row" style="margin-left: -5%;">
                                 <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                  <img id="berita1_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
+                                  <img id="kerjasama1_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
                                 </div>
                                   <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                                     <div class="section-title">
-                                        <h4 id="berita1_judul"></h4>
-                                      <h5>Berita</h5>
-                                      <h5 class="author"><span id="berita1_author"></span> | <span id="berita1_published"></span></h5>
-                                      <a href="#" id="berita1_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
+                                        <h4 id="kerjasama1_judul"></h4>
+                                      <h5>Kerja Sama</h5>
+                                      <h5 class="author"><span id="kerjasama1_author"></span> | <span id="kerjasama1_published"></span></h5>
+                                      <a href="#" id="kerjasama1_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
                                     </div>
                                 </div>
                               </div>
@@ -139,14 +139,14 @@
 
                               <div class="row" style="margin-left: -5%;">
                                 <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                  <img id="berita2_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
+                                  <img id="kerjasama2_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
                                 </div>
                                   <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                                     <div class="section-title">
-                                        <h4 id="berita2_judul"></h4>
-                                      <h5>Berita</h5>
-                                      <h5 class="author"><span id="berita2_author"></span> | <span id="berita2_published"></span></h5>
-                                      <a href="#" id="berita2_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
+                                        <h4 id="kerjasama2_judul"></h4>
+                                      <h5>Kerja Sama</h5>
+                                      <h5 class="author"><span id="kerjasama2_author"></span> | <span id="kerjasama2_published"></span></h5>
+                                      <a href="#" id="kerjasama2_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
                                     </div>
                                 </div>
                               </div>
@@ -155,30 +155,30 @@
 
                                 <div class="row" style="margin-left: -5%;">
                                   <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                    <img id="berita3_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
+                                    <img id="kerjasama3_img" src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
                                   </div>
                                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                                       <div class="section-title">
-                                          <h4 id="berita3_judul"></h4>
-                                        <h5>Berita</h5>
-                                        <h5 class="author"><span id="berita3_author"></span> | <span id="berita3_published"></span></h5>
-                                        <a href="#" id="berita3_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
+                                          <h4 id="kerjasama3_judul"></h4>
+                                        <h5>Kerja Sama</h5>
+                                        <h5 class="author"><span id="kerjasama3_author"></span> | <span id="kerjasama3_published"></span></h5>
+                                        <a href="#" id="kerjasama3_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
                                       </div>
                                   </div>
                                 </div>
-
+                        
                                 <br>
 
                                 <div class="row" style="margin-left: -5%;">
                                   <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                    <img id="berita4_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
+                                    <img id="kerjasama4_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
                                   </div>
                                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                                       <div class="section-title">
-                                          <h4 id="berita4_judul"></h4>
-                                        <h5>Berita</h5>
-                                        <h5 class="author"><span id="berita4_author"></span> | <span id="berita4_published"></span></h5>
-                                        <a href="#" id="berita4_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
+                                          <h4 id="kerjasama4_judul"></h4>
+                                        <h5>Kerja Sama</h5>
+                                        <h5 class="author"><span id="kerjasama4_author"></span> | <span id="kerjasama4_published"></span></h5>
+                                        <a href="#" id="kerjasama4_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
                                       </div>
                                   </div>
                                 </div>
@@ -202,7 +202,7 @@
                   <aside class="mu-sidebar">
                     <!-- start single sidebar -->
                     <div class="mu-single-sidebar">
-                      <h3>Daftar Berita</h3>
+                      <h3>Kerjasama</h3>
                       <hr align="left">
                       <ul class="mu-sidebar-catg" style="list-style: none;">
                         <li><a style="border-left: 6px solid #105194;" href="arsip-kerja-sama.php">Arsip Kerja Sama</a></li>
@@ -316,18 +316,18 @@
   }
 	async function arsip_kerjasama() {
 	    // fetch data
-      let response = await fetch(web_strapi + '/articles/index');
+      let response = await fetch(web_strapi + '/arsipkerjasamas/index');
 	    let data = await response.json();
        var i = 1;
 
       // set data
       for (i; i <= 4; i++) {
         console.log(data);
-        document.getElementById("berita"+ i +"_judul").innerHTML = data[i-1].judul;
-        document.getElementById("berita"+ i +"_author").innerHTML = data[i-1].author;
-        document.getElementById("berita"+ i +"_published").innerHTML = formatMyDate(data[i-1].published_at);
-        document.getElementById("berita"+ i +"_href").href = "berita_detail.php?id=" + data[i-1].slug;
-        document.getElementById("berita"+ i +"_img").src = web_strapi + data[i-1].attachment.url;
+        document.getElementById("kerjasama"+ i +"_judul").innerHTML = data[i-1].judul;
+        document.getElementById("kerjasama"+ i +"_author").innerHTML = data[i-1].author;
+        document.getElementById("kerjasama"+ i +"_published").innerHTML = formatMyDate(data[i-1].published_at);
+        document.getElementById("kerjasama"+ i +"_href").href = "kerjasama-detail.php?id=" + data[i-1].slug;
+        document.getElementById("kerjasama"+ i +"_img").src = web_strapi + data[i-1].attachment[0].url;
         
        }
 	}

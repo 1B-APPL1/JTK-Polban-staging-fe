@@ -5,13 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Berita | Politeknik Negeri Bandung</title>
+  <title>Dosen | Politeknik Negeri Bandung</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -23,6 +22,7 @@
   <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
@@ -65,11 +65,11 @@
           <li><a class="nav-link" href="../index.php">Beranda</a></li>
           <li><a class="nav-link" href="../profil/profil-jurusan.php">Tentang JTK</a></li>
           <li><a class="nav-link" href="../kurikulum/d3-2016.php">Akademik</a></li>
-          <li><a class="nav-link " href="../mitra/arsip-kerja-sama.php">Mitra</a></li>
+          <li><a class="nav-link" href="../mitra/arsip-kerja-sama.php">Mitra</a></li>
           <li><a class="nav-link" href="../lulusan/d3.php">Lulusan</a></li>
-          <li class="dropdown"><a href="#" class="nav-link active"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#" class="active"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="berita_home.php">Berita</a></li>
+              <li><a href="../berita/berita_home.php">Berita</a></li>
               <li><a href="../fasilitas/fasilitas.php">Fasilitas</a></li>
               <li><a href="../event/event_home.php">Event</a></li>
               <li><a href="../galeri/galeri.php">Galeri</a></li>
@@ -82,8 +82,8 @@
               </li>
               <li class="dropdown"><a href="#"><span>Pegawai</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../pegawai/daftar_dosen.php">Dosen</a></li>
-                  <li><a href="../pegawai/daftar_pegawai.php">Lainnya</a></li>
+                  <li><a href="daftar_dosen.php">Dosen</a></li>
+                  <li><a href="daftar_pegawai.php">Lainnya</a></li>
                 </ul>
               </li>
             </ul>
@@ -95,137 +95,81 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <!-- ======= Slider Section ======= -->
+  <section id="hero" style="background-attachment: relative;" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1 id="judul_utama" class="d-flex justify-content-center">Halaman<span>&nbsp Berita</span></h1>
+      <h1 id="judul_utama" class="d-flex justify-content-center">Daftar<span>&nbspDosen</span></h1>
     </div>
-  </section><!-- End Hero -->
- 
-  <!-- ======= Profil Section ======= -->
+  </section><!-- End Slider -->
+
+  <main id="main" data-aos="fade-up">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Daftar Dosen</h2>
+          <ol>
+            <li><a href="index.php">Beranda</a></li>
+            <li>Dosen</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+  <!-- ======= List Section ======= -->
   <section id="mu-course-content">
     <div class="container" data-aos="fade-up">
       <div class="row" data-aos="fade-up" data-aos-delay="100">
         <div class="col-md-12">
           <div class="mu-course-content-area">
             <div class="row">
-                <div class="col-md-9">
-                  <!-- start course content container -->
-                  <div class="mu-course-container mu-course-details">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="mu-latest-course-single">
-                          <h2><a href="#">Berita Terbaru</a></h2>
-                          <hr align="left">
-                          <!-- ======= Arsip Section ======= -->
-                          <section id="about" class="about" style="padding-top: 1%;">
-                            <div class="container" data-aos="fade-up">
-                              
-                              <div class="row" style="margin-left: -5%;">
-                                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                  <img id="berita1_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
-                                </div>
-                                  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                                    <div class="section-title">
-                                        <h4 id="berita1_judul"></h4>
-                                      <h5>Berita</h5>
-                                      <h5 class="author"><span id="berita1_author"></span> | <span id="berita1_published"></span></h5>
-                                      <a href="#" id="berita1_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
-                                    </div>
-                                </div>
-                              </div>
-
-                              <br>
-
-                              <div class="row" style="margin-left: -5%;">
-                                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                  <img id="berita2_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
-                                </div>
-                                  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                                    <div class="section-title">
-                                        <h4 id="berita2_judul"></h4>
-                                      <h5>Berita</h5>
-                                      <h5 class="author"><span id="berita2_author"></span> | <span id="berita2_published"></span></h5>
-                                      <a href="#" id="berita2_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
-                                    </div>
-                                </div>
-                              </div>
-                              
-                                <br>
-
-                                <div class="row" style="margin-left: -5%;">
-                                  <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                    <img id="berita3_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
-                                  </div>
-                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                                      <div class="section-title">
-                                          <h4 id="berita3_judul"></h4>
-                                        <h5>Berita</h5>
-                                        <h5 class="author"><span id="berita3_author"></span> | <span id="berita3_published"></span></h5>
-                                        <a href="#" id="berita3_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
-                                      </div>
-                                  </div>
-                                </div>
-
-                                <br>
-
-                                <div class="row" style="margin-left: -5%;">
-                                  <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                    <img id="berita4_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
-                                  </div>
-                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                                      <div class="section-title">
-                                          <h4 id="berita4_judul"></h4>
-                                        <h5>Berita</h5>
-                                        <h5 class="author"><span id="berita4_author"></span> | <span id="berita4_published"></span></h5>
-                                        <a href="#" id="berita4_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
-                                      </div>
-                                  </div>
-                                </div>
-                        
-                                <br>
-
-                              
-
-                            </div>
-                          </section><!-- End Arsip Section -->
-
-                        </div> 
-                      </div>                                   
-                    </div>
-                  </div>
-                  <!-- end course content container -->
-                </div>
-
-                <div class="col-md-3">
-                  <!-- start sidebar -->
-                  <aside class="mu-sidebar">
-                    <!-- start single sidebar -->
-                    <div class="mu-single-sidebar">
-                      <h3>Daftar Berita</h3>
+              <div class="section-title">
+                <h2 style="color: orange;">Dosen</h2>
+                <a href="daftar_pegawai.php"><h2>Lainnya</h2></a>
+              </div>
+              <!-- start course content container -->
+              <div class="mu-course-container mu-course-details">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="mu-latest-course-single">
+                      <h2><a href="#">Daftar Pengajar (Dosen)</a></h2>
                       <hr align="left">
-                      <ul class="mu-sidebar-catg" style="list-style: none;">
-                        <li><a style="border-left: 6px solid #105194;" href="arsip-kerja-sama.php">Arsip Kerja Sama</a></li>
-                        <li><a href="form-kemitraan.php">Form Kemitraan</a></li>
-                        <li><a href="daftar-kemitraan.php">Daftar Kemitraan JTK Polban</a></li>
-                      </ul>
-                    </div>
-                    <hr class="mu-single-hr">
-                    <!-- end single sidebar -->
-                  </aside>
-                  <!-- / end sidebar -->
+                      <div class="mu-latest-course-single-content" style="background-color: white;">
+                        <div class="row" style="font-size: 13px; display: block; margin: 0 auto;">
+                              <table id="bimz" class="table table-striped table-bordered table-responsive">
+                                  <thead>
+                                      <tr>
+                                        <th class="text-center" style="width: 10px;">NIP</th>
+                                        <th class="text-center">Nama</th>
+                                        <th class="text-center">Foto</th>
+                                        <th class="text-center">Action</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                  </tbody>
+                              </table>
+                        </div>                      
+                      </div>
+                    </div> 
+                  </div>                                   
                 </div>
+              </div>
+              <!-- end course content container -->
             </div>
           </div>
         </div>  
       </div>
     </div>
   </section>
-  <!-- End Profil Section -->
+  <!-- End List Section -->
+
+  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-
     <div class="footer-top" style="background-color: #105194;">
       <div class="container">
         <div class="row">
@@ -295,6 +239,8 @@
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
@@ -302,35 +248,38 @@
 </body>
 
 </html>
-<script type="text/javascript">
-  // Global Var
-  var web_strapi = "https://portaljtk.herokuapp.com";
 
-  window.onload = callAllFunc();
-
-  function callAllFunc(){
-    arsip_kerjasama();
+<style type="text/css">
+  .table > tbody > tr > td {
+    vertical-align: middle;
   }
-  function formatMyDate(value, locale = 'en-GB') {
-    return new Date(value).toLocaleDateString(locale);
-  }
-	async function arsip_kerjasama() {
-	    // fetch data
-      let response = await fetch(web_strapi + '/articles/index');
-	    let data = await response.json();
-       var i = 1;
+</style>
 
-      // set data
-      for (i; i <= 4; i++) {
-        console.log(data);
-        document.getElementById("berita"+ i +"_judul").innerHTML = data[i-1].judul;
-        document.getElementById("berita"+ i +"_author").innerHTML = data[i-1].author;
-        document.getElementById("berita"+ i +"_published").innerHTML = formatMyDate(data[i-1].published_at);
-        document.getElementById("berita"+ i +"_href").href = "berita_detail.php?id=" + data[i-1].slug;
-        document.getElementById("berita"+ i +"_img").src = web_strapi + data[i-1].attachment.url;
-        
-       }
-	}
-
+<script>
+var web_strapi = "https://portaljtk.herokuapp.com";
+$(document).ready(function (){
+  $('#bimz').DataTable({
+    processing: true,
+    "ajax": {
+      "url": web_strapi + "/dosens",
+      dataSrc:"",
+      cache: true
+    },
+    "columns": [
+      { "data": "NIP" },
+      { "data": "nama" },
+      { "data": "foto.formats.thumbnail.url",
+        render: function (data, type, row, meta) {
+          return '<img src="' + web_strapi + data + '" style="display: block; margin: 0 auto;"/>';
+        }
+      },
+      { "data": "id",
+        render: function (data, type, row, meta) {
+          return '<div class="text-center"><a href=dosen_detail.php?id=' + data + '><button type="button" class="btn btn-primary btn-sm">Detail</button></a></div>';
+        }
+      }
+    ]
+  });
+});
 
 </script>

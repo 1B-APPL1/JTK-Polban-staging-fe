@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Event | Politeknik Negeri Bandung</title>
+  <title>Study Tracer D3 | Politeknik Negeri Bandung</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -65,12 +65,12 @@
           <li><a class="nav-link" href="../profil/profil-jurusan.php">Tentang JTK</a></li>
           <li><a class="nav-link" href="../kurikulum/d3-2016.php">Akademik</a></li>
           <li><a class="nav-link" href="../mitra/arsip-kerja-sama.php">Mitra</a></li>
-          <li><a class="nav-link" href="../lulusan/d3.php">Lulusan</a></li>
-          <li class="dropdown"><a href="#" class="active"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link active" href="d3.php">Lulusan</a></li>
+          <li class="dropdown"><a href="#"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="../berita/berita_home.php">Berita</a></li>
               <li><a href="../fasilitas/fasilitas.php">Fasilitas</a></li>
-              <li><a href="event_home.php">Event</a></li>
+              <li><a href="../event/event_home.php">Event</a></li>
               <li><a href="../galeri/galeri.php">Galeri</a></li>
               <li class="dropdown"><a href="#"><span>Prestasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
@@ -97,7 +97,7 @@
   <!-- ======= Slider Section ======= -->
   <section id="hero" style="background-attachment: relative;" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1 class="d-flex justify-content-center">Detail<span>&nbsp;Event</span></h1>
+      <h1 id="judul_utama" class="d-flex justify-content-center">Lulusan<span>-D3</span></h1>
     </div>
   </section><!-- End Slider -->
 
@@ -108,50 +108,34 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Detail Event</h2>
+          <h2>Lulusan D3 - Tracer Study</h2>
           <ol>
             <li><a href="index.php">Beranda</a></li>
-            <li>Event</li>
-            <li id="bc_title">:title</li>
+            <li>Lulusan D3</li>
           </ol>
         </div>
+
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <section class="inner-page" style="padding-top: 0px;">
+    <section class="inner-page">
       <div class="container">
-        <p>
-<!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-                  <img id="berita_img" src="../assets/img/portfolio/portfolio-details-1.jpg" alt="">
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-            <div class="portfolio-description">
-              <h2 id="berita_judul">aaa</h2>
-              <p id="berita_text" style="text-align: justify;">
-                aaa
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>About Event</h3>
-              <ul>
-                <li id="author"></li>
-                <li id="published"></li>
-              </ul>
-            </div>
-          </div>
+        <div class="section-title">
+          <h2 style="color: orange;">D3 Teknik Informatika</h2>
+          <a href="d4.php"><h2>D4 Teknik Informatika</h2></a>
         </div>
-      </div>
-    </section>
-<!-- End Portfolio Details Section -->
+        <p>
+          <h3>Grafik Tingkat Kelulusan</h3>
+          <h7>Tingkat Kelulusan dari D3 Teknik Informatika Politeknik Negeri Bandung, data yang didapat berasal dari jumlah mahasiswa yang lulus angkatan 2019.</h7>
+          <div class="d-flex justify-content-between align-items-center">
+            <div id="plotLulus" class="align-items-center" style="width:100%;max-width:700px"></div>
+          </div>
+          <hr>
+          <h3>Grafik Tracer Study</h3>
+          <h7>Tracer Study dari D3 Teknik Informatika Politeknik Negeri Bandung, data yang didapat berasal dari jumlah mahasiswa yang lulus angkatan 2019.</h7>
+          <div class="d-flex justify-content-between align-items-center">
+            <div id="plotTracer" class="align-items-center" style="width:100%;max-width:700px"></div>
+          </div>
         </p>
       </div>
     </section>
@@ -230,6 +214,9 @@
   <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="../assets/vendor/php-email-form/validate.js"></script>
 
+  <!-- Plot -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
 
@@ -237,35 +224,55 @@
 
 </html>
 
-<script type="text/javascript">
-  var web_strapi = "https://portaljtk.herokuapp.com";
-  var id = "<?php echo $_GET['id']; ?>";
+<script>
+  var web_strapi = "http://localhost:1337";
 
-  window.onload = callAllFunc();
+  window.onload = callFunc();
 
-  function callAllFunc(){
-    event();
+  function callFunc(){
+    plotLulus();
+    plotTracer();
   }
 
-  function formatMyDate(value, locale = 'en-GB') {
-    return new Date(value).toLocaleDateString(locale);
+  async function plotLulus(){
+    // fetch data
+    let response = await fetch(web_strapi + '/tracerstudies/628f46bb09a9cf11c0ac6bfe');
+    let result = await response.json();
+
+    var xArray = ["Lulus Tepat Waktu", "Lulus Tidak Tepat Waktu", "Tidak Lulus"];
+    var yArray = [parseInt(result.lulus), parseInt(result.lulus_tidaktepat), parseInt(result.tidak_lulus)];
+
+    var data = [{
+      x:xArray,
+      y:yArray,
+      type:"bar",
+      marker: {
+        color: 'red'
+      }
+    }];
+
+    var layout = {};
+
+    Plotly.newPlot("plotLulus", data, layout);
   }
 
-  async function event() {
-      // fetch data
-      let response = await fetch(web_strapi + '/events/' + id);
-      let data = await response.json();
-      const regex = /\\n|\\r\\n|\\n\\r|\\r/g;
-      // set data
-      document.getElementById("berita_judul").innerHTML = data.judul_agenda;
-      document.getElementById("bc_title").innerHTML = data.judul_agenda;
-      document.getElementById("author").innerHTML = "Author : Manajemen JTK";
-      let deskripsi = JSON.stringify(data.keterangan);
-      let deskripsi_replace = deskripsi.replace(regex, '<br>'); 
-      let result = deskripsi_replace.replace(/\“|\"/gi,'');
-      document.getElementById("berita_text").innerHTML = result;
-      document.getElementById("berita_img").src = web_strapi + data.attachment[0].url;
-      document.getElementById("published").innerHTML = "Published : " + formatMyDate(data.published_at);
-  }
+  async function plotTracer(){
+    // fetch data
+    let response = await fetch(web_strapi + '/tracerstudies/628f46bb09a9cf11c0ac6bfe');
+    let result = await response.json();
 
+    var xArray = ["Bekerja", "Melanjutkan Study", "Wirausaha", "Tidak Bekerja", "Belum Diketahui"];
+    var yArray = [parseInt(result.bekerja), parseInt(result.melanjutkan_study), parseInt(result.wirausaha), parseInt(result.tidak_bekerja), parseInt(result.belum_diketahui)];
+
+    var data = [{
+      x:xArray,
+      y:yArray,
+      type:"bar"
+    }];
+
+    var layout = {};
+
+    Plotly.newPlot("plotTracer", data, layout);
+  }
+  
 </script>

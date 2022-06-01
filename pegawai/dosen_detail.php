@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Event | Politeknik Negeri Bandung</title>
+  <title>Detail Dosen | Politeknik Negeri Bandung</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -70,7 +70,7 @@
             <ul>
               <li><a href="../berita/berita_home.php">Berita</a></li>
               <li><a href="../fasilitas/fasilitas.php">Fasilitas</a></li>
-              <li><a href="event_home.php">Event</a></li>
+              <li><a href="../event/event_home.php">Event</a></li>
               <li><a href="../galeri/galeri.php">Galeri</a></li>
               <li class="dropdown"><a href="#"><span>Prestasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
@@ -81,8 +81,8 @@
               </li>
               <li class="dropdown"><a href="#"><span>Pegawai</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../pegawai/daftar_dosen.php">Dosen</a></li>
-                  <li><a href="../pegawai/daftar_pegawai.php">Lainnya</a></li>
+                  <li><a href="daftar_dosen.php">Dosen</a></li>
+                  <li><a href="daftar_pegawai.php">Lainnya</a></li>
                 </ul>
               </li>
             </ul>
@@ -97,7 +97,7 @@
   <!-- ======= Slider Section ======= -->
   <section id="hero" style="background-attachment: relative;" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1 class="d-flex justify-content-center">Detail<span>&nbsp;Event</span></h1>
+      <h1 class="d-flex justify-content-center">Detail<span>&nbsp;Dosen</span></h1>
     </div>
   </section><!-- End Slider -->
 
@@ -108,53 +108,121 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Detail Event</h2>
+          <h2>Detail Dosen</h2>
           <ol>
             <li><a href="index.php">Beranda</a></li>
-            <li>Event</li>
+            <li>Pegawai</li>
+            <li>Dosen</li>
             <li id="bc_title">:title</li>
           </ol>
         </div>
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <section class="inner-page" style="padding-top: 0px;">
-      <div class="container">
-        <p>
-<!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-                  <img id="berita_img" src="../assets/img/portfolio/portfolio-details-1.jpg" alt="">
+    <!-- ======= Profil Section ======= -->
+    <section id="mu-course-content">
+      <div class="container" data-aos="fade-up">
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-12">
+            <div class="mu-course-content-area">
+              <div class="row">
+                  <div class="col-md-3">
+                    <!-- start sidebar -->
+                    <aside class="mu-sidebar">
+                      <!-- start single sidebar -->
+                      <div class="mu-single-sidebar">
+                        <h3>Profil Dosen</h3>
+                        <hr align="left" style="width: 100%;">
+                        <img id="dosen_img" src="../assets/img/avatar.png" alt="Avatar">
+                      </div>
+                      <!-- end single sidebar -->                  
+                    </aside>
+                    <!-- / end sidebar -->
+                  </div>
+
+                  <div class="col-md-9">
+                    <!-- start course content container -->
+                    <div class="mu-course-container mu-course-details">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="mu-latest-course-single">
+                            <div class="mu-latest-course-single-content">
+                              <br>
+                              <br>
+                              <br>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">NIP</td>
+                                    <td>:</td>
+                                    <td id="dosen_nip">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Nama Lengkap</td>
+                                    <td>:</td>
+                                    <td id="dosen_nama">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Tempat, tanggal lahir</td>
+                                    <td>:</td>
+                                    <td id="dosen_lahir">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">No Telepon</td>
+                                    <td>:</td>
+                                    <td id="dosen_kontak">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Alamat</td>
+                                    <td>:</td>
+                                    <td id="dosen_tinggal">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Jenis Kelamin</td>
+                                    <td>:</td>
+                                    <td  id="dosen_jk">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">KBK</td>
+                                    <td>:</td>
+                                    <td  id="dosen_kbk">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Expertise</td>
+                                    <td>:</td>
+                                    <td  id="dosen_expertise">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Mata Kuliah yang diampu</td>
+                                    <td>:</td>
+                                    <td  id="dosen_matkul">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Pengalaman</td>
+                                    <td>:</td>
+                                    <td  id="dosen_pengalaman">191524052</td>
+                                  </tr>
+                                  <tr>
+                                    <td style="color: #105194; font-weight: bold; width:40%">Daftar Publikasi Penelitian/Karya Ilmiah</td>
+                                    <td>:</td>
+                                    <td  id="dosen_karya">191524052</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div> 
+                        </div>                                   
+                      </div>
+                    </div>
+                    <!-- end course content container -->
+                  </div>
               </div>
-              <div class="swiper-pagination"></div>
             </div>
-            <div class="portfolio-description">
-              <h2 id="berita_judul">aaa</h2>
-              <p id="berita_text" style="text-align: justify;">
-                aaa
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>About Event</h3>
-              <ul>
-                <li id="author"></li>
-                <li id="published"></li>
-              </ul>
-            </div>
-          </div>
+          </div>  
         </div>
       </div>
     </section>
-<!-- End Portfolio Details Section -->
-        </p>
-      </div>
-    </section>
+    <!-- End Profil Section -->
 
   </main><!-- End #main -->
 
@@ -241,31 +309,49 @@
   var web_strapi = "https://portaljtk.herokuapp.com";
   var id = "<?php echo $_GET['id']; ?>";
 
+
   window.onload = callAllFunc();
 
   function callAllFunc(){
-    event();
+    dosen();
   }
 
   function formatMyDate(value, locale = 'en-GB') {
     return new Date(value).toLocaleDateString(locale);
   }
 
-  async function event() {
+  async function dosen() {
       // fetch data
-      let response = await fetch(web_strapi + '/events/' + id);
+      let response = await fetch(web_strapi + '/dosens/' + id);
       let data = await response.json();
+
       const regex = /\\n|\\r\\n|\\n\\r|\\r/g;
       // set data
-      document.getElementById("berita_judul").innerHTML = data.judul_agenda;
-      document.getElementById("bc_title").innerHTML = data.judul_agenda;
-      document.getElementById("author").innerHTML = "Author : Manajemen JTK";
-      let deskripsi = JSON.stringify(data.keterangan);
-      let deskripsi_replace = deskripsi.replace(regex, '<br>'); 
-      let result = deskripsi_replace.replace(/\“|\"/gi,'');
-      document.getElementById("berita_text").innerHTML = result;
-      document.getElementById("berita_img").src = web_strapi + data.attachment[0].url;
-      document.getElementById("published").innerHTML = "Published : " + formatMyDate(data.published_at);
+      document.getElementById("dosen_img").src = web_strapi + data.foto.url;
+      document.getElementById("dosen_nip").innerHTML = data.NIP;
+      document.getElementById("dosen_nama").innerHTML = data.nama;
+      document.getElementById("bc_title").innerHTML = data.nama;
+      document.getElementById("dosen_tinggal").innerHTML = data.tempat_tinggal;
+      document.getElementById("dosen_lahir").innerHTML = data.tempat_tanggal_lahir;
+      document.getElementById("dosen_kontak").innerHTML = data.kontak;
+      document.getElementById("dosen_jk").innerHTML = data.jk;
+      //karya ilmiah
+      let karya = JSON.stringify(data.karya_ilmiah);
+      let karya_replace = karya.replace(regex, '<br>'); 
+      let hasil = karya_replace.replace(/\“|\"/gi,'');
+      document.getElementById("dosen_karya").innerHTML = hasil;
+
+      //pengalaman
+      let pengalaman = JSON.stringify(data.pengalaman);
+      let pengalaman_replace = pengalaman.replace(regex, '<br>'); 
+      let result = pengalaman_replace.replace(/\“|\"/gi,'');
+      document.getElementById("dosen_pengalaman").innerHTML = result;
+
+      document.getElementById("dosen_matkul").innerHTML = data.matkul;
+      document.getElementById("dosen_kbk").innerHTML = data.KBK;
+      document.getElementById("dosen_expertise").innerHTML = data.expertise;
+
+      console.log(data);
   }
 
 </script>

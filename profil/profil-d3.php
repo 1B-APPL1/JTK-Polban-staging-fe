@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Berita | Politeknik Negeri Bandung</title>
+  <title>Profil D3 | Politeknik Negeri Bandung</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -63,13 +63,13 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link" href="../index.php">Beranda</a></li>
-          <li><a class="nav-link" href="../profil/profil-jurusan.php">Tentang JTK</a></li>
+          <li><a class="nav-link active" href="profil-jurusan.php">Tentang JTK</a></li>
           <li><a class="nav-link" href="../kurikulum/d3-2016.php">Akademik</a></li>
-          <li><a class="nav-link " href="../mitra/arsip-kerja-sama.php">Mitra</a></li>
+          <li><a class="nav-link" href="../mitra/arsip-kerja-sama.php">Mitra</a></li>
           <li><a class="nav-link" href="../lulusan/d3.php">Lulusan</a></li>
-          <li class="dropdown"><a href="#" class="nav-link active"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="berita_home.php">Berita</a></li>
+              <li><a href="../berita/berita_home.php">Berita</a></li>
               <li><a href="../fasilitas/fasilitas.php">Fasilitas</a></li>
               <li><a href="../event/event_home.php">Event</a></li>
               <li><a href="../galeri/galeri.php">Galeri</a></li>
@@ -98,7 +98,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1 id="judul_utama" class="d-flex justify-content-center">Halaman<span>&nbsp Berita</span></h1>
+      <h1 id="judul_utama" class="d-flex justify-content-center">Profil<span>-D3</span></h1>
     </div>
   </section><!-- End Hero -->
  
@@ -115,82 +115,38 @@
                     <div class="row">
                       <div class="col-md-12">
                         <div class="mu-latest-course-single">
-                          <h2><a href="#">Berita Terbaru</a></h2>
+                          <h2><a href="#">Profil Program Studi D3</a></h2>
                           <hr align="left">
-                          <!-- ======= Arsip Section ======= -->
-                          <section id="about" class="about" style="padding-top: 1%;">
-                            <div class="container" data-aos="fade-up">
-                              
-                              <div class="row" style="margin-left: -5%;">
-                                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                  <img id="berita1_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
-                                </div>
-                                  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                                    <div class="section-title">
-                                        <h4 id="berita1_judul"></h4>
-                                      <h5>Berita</h5>
-                                      <h5 class="author"><span id="berita1_author"></span> | <span id="berita1_published"></span></h5>
-                                      <a href="#" id="berita1_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
-                                    </div>
-                                </div>
-                              </div>
-
-                              <br>
-
-                              <div class="row" style="margin-left: -5%;">
-                                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                  <img id="berita2_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
-                                </div>
-                                  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                                    <div class="section-title">
-                                        <h4 id="berita2_judul"></h4>
-                                      <h5>Berita</h5>
-                                      <h5 class="author"><span id="berita2_author"></span> | <span id="berita2_published"></span></h5>
-                                      <a href="#" id="berita2_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
-                                    </div>
-                                </div>
-                              </div>
-                              
-                                <br>
-
-                                <div class="row" style="margin-left: -5%;">
-                                  <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                    <img id="berita3_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
-                                  </div>
-                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                                      <div class="section-title">
-                                          <h4 id="berita3_judul"></h4>
-                                        <h5>Berita</h5>
-                                        <h5 class="author"><span id="berita3_author"></span> | <span id="berita3_published"></span></h5>
-                                        <a href="#" id="berita3_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
-                                      </div>
-                                  </div>
-                                </div>
-
-                                <br>
-
-                                <div class="row" style="margin-left: -5%;">
-                                  <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                    <img id="berita4_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
-                                  </div>
-                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                                      <div class="section-title">
-                                          <h4 id="berita4_judul"></h4>
-                                        <h5>Berita</h5>
-                                        <h5 class="author"><span id="berita4_author"></span> | <span id="berita4_published"></span></h5>
-                                        <a href="#" id="berita4_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
-                                      </div>
-                                  </div>
-                                </div>
-                        
-                                <br>
-
-                              
-
-                            </div>
-                          </section><!-- End Arsip Section -->
-
-                        </div> 
+                          <!-- <hr width="50%;" color="black" size="50" align="left">  -->
+                          <figure class="mu-latest-course-img">  
+                            <a href="#"><img src="../assets/img/banner.jpg" alt="img"></a>
+                          </figure>
+                          <div class="mu-latest-course-single-content">
+                            <h3>Tujuan Program Studi</h3>
+                            <ol>
+                              <li>Menghasilkan tenaga di bidang perancangan dan implementasi perangkat lunak bisnis serta perancangan solusi bisnis berbasis teknologi informasi untuk menunjang kebutuhan masyarakat dan industri di lingkup nasional dan internasional, yang memiliki sikap dan kemampuan sebagai berikut:</li>
+                              <ol type="i">
+                                <li>Beradaptasi terhadap perkembangan teknologi informasi</li>
+                                <li>Belajar sepanjang hayat dan ulet</li>
+                                <li>Berpikir kreatif, analitis dan sistematis</li>
+                                <li>Berwirausaha</li>
+                                <li>Bermoral</li>
+                                <li>Berkomunikasi dalam bahasa Internasional</li>
+                              </ol>
+                              <li>Menghasilkan lulusan dengan kompetensi yang diakui pada tingkat nasional maupun internasional.</li>
+                              <li>Mendorong mahasiswa untuk menghasilkan produk terapan di bidang perangkat lunak bisnis yang bermanfaat bagi masyarakat dan industri baik nasional maupun internasional.</li>
+                              <li>Menghasilkan produk pelayanan dan produk penelitian terapan di bidang teknologi informasi yang bermanfaat bagi masyarakat dan industri baik di tingkat nasional maupun internasional.</li>
+                            </ol>
+                            <h3>Visi</h3>
+                            <p>Menjadi Program Studi unggulan dan terdepan dalam program pendidikan Diploma III Teknik Informatika yang diakui baik di tingkat nasional maupun internasional pada tahun 2025.</p>
+                            <h3>Misi</h3>
+                            <ol>
+                              <li>Menyelenggarakan program pendidikan Diploma III Teknik Informatika yang diakui baik di tingkat nasional maupun internasional.</li>
+                              <li>Melakukan penelitian terapan yang dapat digunakan oleh Industri, Institusi atau Masyarakat baik ditingkat nasional maupun internasional.</li>
+                              <li>Melaksanakan pengabdian kepada masyarakat pada lingkup lokal, regional dan nasional.</li>
+                            </ol>
+                          </div>
+                          </div> 
                       </div>                                   
                     </div>
                   </div>
@@ -202,16 +158,23 @@
                   <aside class="mu-sidebar">
                     <!-- start single sidebar -->
                     <div class="mu-single-sidebar">
-                      <h3>Daftar Berita</h3>
+                      <h3>Profil</h3>
                       <hr align="left">
                       <ul class="mu-sidebar-catg" style="list-style: none;">
-                        <li><a style="border-left: 6px solid #105194;" href="arsip-kerja-sama.php">Arsip Kerja Sama</a></li>
-                        <li><a href="form-kemitraan.php">Form Kemitraan</a></li>
-                        <li><a href="daftar-kemitraan.php">Daftar Kemitraan JTK Polban</a></li>
+                        <li><a href="profil-jurusan.php">Profil Jurusan</a></li>
+                        <li><a style="border-left: 6px solid #105194;" href="profil-d3.php">Profil Program Studi D3</a></li>
+                        <li><a href="profil-d4.php">Profil Program Studi D4</a></li>
                       </ul>
                     </div>
                     <hr class="mu-single-hr">
                     <!-- end single sidebar -->
+                    <!-- start single sidebar -->
+                    <div class="mu-single-sidebar">
+                      <h4>Ketua Prodi</h4>
+                      <img src="../assets/img/profil/kaprodi-d3.jpg" alt="Avatar">
+                      <p>Ghifari Munawar, M.T.</p>
+                    </div>
+                    <!-- end single sidebar -->                  
                   </aside>
                   <!-- / end sidebar -->
                 </div>
@@ -302,35 +265,18 @@
 </body>
 
 </html>
-<script type="text/javascript">
-  // Global Var
-  var web_strapi = "https://portaljtk.herokuapp.com";
 
-  window.onload = callAllFunc();
+<!-- <script type="text/javascript">
+  berita();
 
-  function callAllFunc(){
-    arsip_kerjasama();
-  }
-  function formatMyDate(value, locale = 'en-GB') {
-    return new Date(value).toLocaleDateString(locale);
-  }
-	async function arsip_kerjasama() {
+	async function berita() {
 	    // fetch data
-      let response = await fetch(web_strapi + '/articles/index');
+      let response = await fetch('http://localhost:1337/articles/terdampak-covid-19-mahasiswa-turun-tangan-dalam-misi-kemanusiaan');
 	    let data = await response.json();
-       var i = 1;
+	    console.log(data.judul);
 
       // set data
-      for (i; i <= 4; i++) {
-        console.log(data);
-        document.getElementById("berita"+ i +"_judul").innerHTML = data[i-1].judul;
-        document.getElementById("berita"+ i +"_author").innerHTML = data[i-1].author;
-        document.getElementById("berita"+ i +"_published").innerHTML = formatMyDate(data[i-1].published_at);
-        document.getElementById("berita"+ i +"_href").href = "berita_detail.php?id=" + data[i-1].slug;
-        document.getElementById("berita"+ i +"_img").src = web_strapi + data[i-1].attachment.url;
-        
-       }
+      document.getElementById("judul_utama").innerHTML = data.judul;
+      document.getElementById("slug_berita").innerHTML = data.slug;
 	}
-
-
-</script>
+</script> -->

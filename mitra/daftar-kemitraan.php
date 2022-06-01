@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Berita | Politeknik Negeri Bandung</title>
+  <title>Arsip Kerjasama | Politeknik Negeri Bandung</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -65,11 +65,11 @@
           <li><a class="nav-link" href="../index.php">Beranda</a></li>
           <li><a class="nav-link" href="../profil/profil-jurusan.php">Tentang JTK</a></li>
           <li><a class="nav-link" href="../kurikulum/d3-2016.php">Akademik</a></li>
-          <li><a class="nav-link " href="../mitra/arsip-kerja-sama.php">Mitra</a></li>
+          <li><a class="nav-link active" href="arsip-kerja-sama.php">Mitra</a></li>
           <li><a class="nav-link" href="../lulusan/d3.php">Lulusan</a></li>
-          <li class="dropdown"><a href="#" class="nav-link active"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="berita_home.php">Berita</a></li>
+              <li><a href="../berita/berita_home.php">Berita</a></li>
               <li><a href="../fasilitas/fasilitas.php">Fasilitas</a></li>
               <li><a href="../event/event_home.php">Event</a></li>
               <li><a href="../galeri/galeri.php">Galeri</a></li>
@@ -98,7 +98,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1 id="judul_utama" class="d-flex justify-content-center">Halaman<span>&nbsp Berita</span></h1>
+      <h1 id="judul_utama" class="d-flex justify-content-center">Kerja<span>&nbsp Sama</span></h1>
     </div>
   </section><!-- End Hero -->
  
@@ -115,81 +115,144 @@
                     <div class="row">
                       <div class="col-md-12">
                         <div class="mu-latest-course-single">
-                          <h2><a href="#">Berita Terbaru</a></h2>
+                          <h2><a href="#">Daftar Kemitraan JTK Polban</a></h2>
                           <hr align="left">
-                          <!-- ======= Arsip Section ======= -->
-                          <section id="about" class="about" style="padding-top: 1%;">
-                            <div class="container" data-aos="fade-up">
-                              
-                              <div class="row" style="margin-left: -5%;">
-                                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                  <img id="berita1_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
-                                </div>
-                                  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                                    <div class="section-title">
-                                        <h4 id="berita1_judul"></h4>
-                                      <h5>Berita</h5>
-                                      <h5 class="author"><span id="berita1_author"></span> | <span id="berita1_published"></span></h5>
-                                      <a href="#" id="berita1_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
-                                    </div>
-                                </div>
-                              </div>
-
-                              <br>
-
-                              <div class="row" style="margin-left: -5%;">
-                                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                  <img id="berita2_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
-                                </div>
-                                  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                                    <div class="section-title">
-                                        <h4 id="berita2_judul"></h4>
-                                      <h5>Berita</h5>
-                                      <h5 class="author"><span id="berita2_author"></span> | <span id="berita2_published"></span></h5>
-                                      <a href="#" id="berita2_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
-                                    </div>
-                                </div>
-                              </div>
-                              
-                                <br>
-
-                                <div class="row" style="margin-left: -5%;">
-                                  <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                    <img id="berita3_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
-                                  </div>
-                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                                      <div class="section-title">
-                                          <h4 id="berita3_judul"></h4>
-                                        <h5>Berita</h5>
-                                        <h5 class="author"><span id="berita3_author"></span> | <span id="berita3_published"></span></h5>
-                                        <a href="#" id="berita3_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
-                                      </div>
-                                  </div>
-                                </div>
-
-                                <br>
-
-                                <div class="row" style="margin-left: -5%;">
-                                  <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                    <img id="berita4_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
-                                  </div>
-                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                                      <div class="section-title">
-                                          <h4 id="berita4_judul"></h4>
-                                        <h5>Berita</h5>
-                                        <h5 class="author"><span id="berita4_author"></span> | <span id="berita4_published"></span></h5>
-                                        <a href="#" id="berita4_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
-                                      </div>
-                                  </div>
-                                </div>
+                          <!-- ======= Clients Section ======= -->
+                          <section id="clients" class="clients section-bg">
+                            <div class="container" data-aos="zoom-in">
+                    
+                                <div class="row">
                         
-                                <br>
+                                    <div class="col-lg-3 col-md- col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/kazee.jpg" class="img-fluid" alt="">
+                                    </div>
+                        
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/Garuda.png" class="img-fluid" alt="">
+                                    </div>
+                        
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/periplus.jpg" class="img-fluid" alt="">
+                                    </div>
 
-                              
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/Padepokan.jpg" class="img-fluid" alt="">
+                                    </div>
+                        
+                                  
+                        
+                                </div>
 
+                                <div class="row">
+                        
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/BEE.jpg" class="img-fluid" alt="">
+                                    </div>
+                        
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/NTI.jpg" class="img-fluid" alt="">
+                                    </div>
+                        
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/LEN2.jpg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/sensehealth.jpg" class="img-fluid" alt="">
+                                    </div>
+                        
+                                  
+                        
+                                </div>
+
+                                <div class="row">
+                        
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/nubela.png" class="img-fluid" alt="">
+                                    </div>
+                        
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/digitaloasis.png" class="img-fluid" alt="">
+                                    </div>
+                        
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/BIGIO.jpg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/meta_description.png" class="img-fluid" alt="">
+                                    </div>
+                        
+                                  
+                        
+                                </div>
+
+                                </div>
+
+                                <div class="row">
+                        
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/neuronworjs.png" class="img-fluid" alt="">
+                                    </div>
+                        
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/kerjaku.jpg" class="img-fluid" alt="">
+                                    </div>
+                        
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/mybauy.png" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/nttdata.jpg" class="img-fluid" alt="">
+                                    </div>
+                        
+                                
+                        
+                                </div>
+
+                                <div class="row">
+                        
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/kong.png" class="img-fluid" alt="">
+                                    </div>
+                        
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/fujitsu.png" class="img-fluid" alt="">
+                                    </div>
+                        
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/ebdesk.png" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/telkomsel.jpg" class="img-fluid" alt="">
+                                    </div>
+                        
+                                  
+                        
+                                </div>
+
+                                <div class="row">
+                        
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/sembada.jpg" class="img-fluid" alt="">
+                                    </div>
+                        
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/ursabyte.png" class="img-fluid" alt="">
+                                    </div>
+                        
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/bukalapak.png" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/img/clients/ciptadra.png" class="img-fluid" alt="">
+                                    </div>
                             </div>
-                          </section><!-- End Arsip Section -->
-
+                          </section>
+                          <!-- End Clients Section -->                        
                         </div> 
                       </div>                                   
                     </div>
@@ -202,12 +265,12 @@
                   <aside class="mu-sidebar">
                     <!-- start single sidebar -->
                     <div class="mu-single-sidebar">
-                      <h3>Daftar Berita</h3>
+                      <h3>Kerjasama</h3>
                       <hr align="left">
                       <ul class="mu-sidebar-catg" style="list-style: none;">
-                        <li><a style="border-left: 6px solid #105194;" href="arsip-kerja-sama.php">Arsip Kerja Sama</a></li>
+                        <li><a href="arsip-kerja-sama.php">Arsip Kerja Sama</a></li>
                         <li><a href="form-kemitraan.php">Form Kemitraan</a></li>
-                        <li><a href="daftar-kemitraan.php">Daftar Kemitraan JTK Polban</a></li>
+                        <li><a style="border-left: 6px solid #105194;" href="daftar-kemitraan.php">Daftar Kemitraan JTK Polban</a></li>
                       </ul>
                     </div>
                     <hr class="mu-single-hr">
@@ -302,35 +365,18 @@
 </body>
 
 </html>
-<script type="text/javascript">
-  // Global Var
-  var web_strapi = "https://portaljtk.herokuapp.com";
 
-  window.onload = callAllFunc();
+<!-- <script type="text/javascript">
+  berita();
 
-  function callAllFunc(){
-    arsip_kerjasama();
-  }
-  function formatMyDate(value, locale = 'en-GB') {
-    return new Date(value).toLocaleDateString(locale);
-  }
-	async function arsip_kerjasama() {
+	async function berita() {
 	    // fetch data
-      let response = await fetch(web_strapi + '/articles/index');
+      let response = await fetch('http://localhost:1337/articles/terdampak-covid-19-mahasiswa-turun-tangan-dalam-misi-kemanusiaan');
 	    let data = await response.json();
-       var i = 1;
+	    console.log(data.judul);
 
       // set data
-      for (i; i <= 4; i++) {
-        console.log(data);
-        document.getElementById("berita"+ i +"_judul").innerHTML = data[i-1].judul;
-        document.getElementById("berita"+ i +"_author").innerHTML = data[i-1].author;
-        document.getElementById("berita"+ i +"_published").innerHTML = formatMyDate(data[i-1].published_at);
-        document.getElementById("berita"+ i +"_href").href = "berita_detail.php?id=" + data[i-1].slug;
-        document.getElementById("berita"+ i +"_img").src = web_strapi + data[i-1].attachment.url;
-        
-       }
+      document.getElementById("judul_utama").innerHTML = data.judul;
+      document.getElementById("slug_berita").innerHTML = data.slug;
 	}
-
-
-</script>
+</script> -->

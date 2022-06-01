@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Berita | Politeknik Negeri Bandung</title>
+  <title>Profil Jurusan | Politeknik Negeri Bandung</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -63,13 +63,13 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link" href="../index.php">Beranda</a></li>
-          <li><a class="nav-link" href="../profil/profil-jurusan.php">Tentang JTK</a></li>
+          <li><a class="nav-link active" href="profil-jurusan.php">Tentang JTK</a></li>
           <li><a class="nav-link" href="../kurikulum/d3-2016.php">Akademik</a></li>
-          <li><a class="nav-link " href="../mitra/arsip-kerja-sama.php">Mitra</a></li>
+          <li><a class="nav-link" href="../mitra/arsip-kerja-sama.php">Mitra</a></li>
           <li><a class="nav-link" href="../lulusan/d3.php">Lulusan</a></li>
-          <li class="dropdown"><a href="#" class="nav-link active"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>Lainnya</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="berita_home.php">Berita</a></li>
+              <li><a href="../berita/berita_home.php">Berita</a></li>
               <li><a href="../fasilitas/fasilitas.php">Fasilitas</a></li>
               <li><a href="../event/event_home.php">Event</a></li>
               <li><a href="../galeri/galeri.php">Galeri</a></li>
@@ -98,7 +98,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1 id="judul_utama" class="d-flex justify-content-center">Halaman<span>&nbsp Berita</span></h1>
+      <h1 id="judul_utama" class="d-flex justify-content-center">Profil<span>&nbspJurusan</span></h1>
     </div>
   </section><!-- End Hero -->
  
@@ -115,81 +115,48 @@
                     <div class="row">
                       <div class="col-md-12">
                         <div class="mu-latest-course-single">
-                          <h2><a href="#">Berita Terbaru</a></h2>
+                          <h2><a href="#">Profil Jurusan</a></h2>
                           <hr align="left">
-                          <!-- ======= Arsip Section ======= -->
-                          <section id="about" class="about" style="padding-top: 1%;">
-                            <div class="container" data-aos="fade-up">
-                              
-                              <div class="row" style="margin-left: -5%;">
-                                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                  <img id="berita1_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
-                                </div>
-                                  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                                    <div class="section-title">
-                                        <h4 id="berita1_judul"></h4>
-                                      <h5>Berita</h5>
-                                      <h5 class="author"><span id="berita1_author"></span> | <span id="berita1_published"></span></h5>
-                                      <a href="#" id="berita1_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
-                                    </div>
-                                </div>
-                              </div>
-
-                              <br>
-
-                              <div class="row" style="margin-left: -5%;">
-                                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                  <img id="berita2_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
-                                </div>
-                                  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                                    <div class="section-title">
-                                        <h4 id="berita2_judul"></h4>
-                                      <h5>Berita</h5>
-                                      <h5 class="author"><span id="berita2_author"></span> | <span id="berita2_published"></span></h5>
-                                      <a href="#" id="berita2_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
-                                    </div>
-                                </div>
-                              </div>
-                              
-                                <br>
-
-                                <div class="row" style="margin-left: -5%;">
-                                  <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                    <img id="berita3_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
-                                  </div>
-                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                                      <div class="section-title">
-                                          <h4 id="berita3_judul"></h4>
-                                        <h5>Berita</h5>
-                                        <h5 class="author"><span id="berita3_author"></span> | <span id="berita3_published"></span></h5>
-                                        <a href="#" id="berita3_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
-                                      </div>
-                                  </div>
-                                </div>
-
-                                <br>
-
-                                <div class="row" style="margin-left: -5%;">
-                                  <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                    <img id="berita4_img"src="../assets/img/arsipkerjasama/DDSTelkom.png" class="img-fluid" width="100%" alt="">
-                                  </div>
-                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                                      <div class="section-title">
-                                          <h4 id="berita4_judul"></h4>
-                                        <h5>Berita</h5>
-                                        <h5 class="author"><span id="berita4_author"></span> | <span id="berita4_published"></span></h5>
-                                        <a href="#" id="berita4_href"> <h5 class="readmore"><b><u>Baca Selengkapnya</u></b></h5></a>
-                                      </div>
-                                  </div>
-                                </div>
-                        
-                                <br>
-
-                              
-
-                            </div>
-                          </section><!-- End Arsip Section -->
-
+                          <!-- <hr width="50%;" color="black" size="50" align="left">  -->
+                          <figure class="mu-latest-course-img">  
+                            <a href="#"><img src="../assets/img/banner.jpg" alt="img"></a>
+                          </figure>
+                          <div class="mu-latest-course-single-content">
+                            <p>Jurusan Teknik Komputer dan Informatika Politeknik Negeri Bandung (lebih dikenal dengan singkatan JTK) merupakan jurusan penyelenggara pendidikan diploma bidang teknologi informasi pertama di Indonesia. Jurusan ini telah menyelenggarakan pendidikan D-3 bidang teknik komputer dan informatika sejak 1977 dan pendidikan D-4 sejak 2009.</p>
+                            <p>Dengan daya tampung sekitar 96 mahasiswa per tahun, sampai saat ini JTK telah menghasilkan lebih dari 2.500 alumni yang bekerja pada berbagai sektor industri, baik di dalam maupun di luar negeri.</p>
+                            <p>Selain menjalankan pendidikan, JTK juga menyelenggarakan penelitian dan pengabdian kepada masyarakat dalam bidang teknologi informasi. Sebagai jurusan pertama yang menyelenggarakan pendidikan profesional bidang teknologi informasi, JTK selalu dijadikan tolok ukur dan telah banyak memberikan bantuan teknis dan non-teknis kepada institusi lain maupun kepada masyarakat umum. Beberapa aktivitas yang sering dilakukan di antaranya adalah pembinaan institusi, pelatihan bidang TI, konsultasi pemanfaatan TI untuk menunjang kegiatan kerja, pengembangan sistem informasi, dan lab/bengkel komputer layanan masyarakat.</p>
+                            <h3>Sejarah Singkat JTK</h3>
+                            <p>JTK bermula pada tahun 1977 saat Institut Teknologi Bandung mendirikan pendidikan D3 di bidang teknologi informasi yang bernama Pendidikan Ahli Teknik Jurusan Penggunaan Komputer (PAT-JPK). Kemudian, PAT-JPK beralih menjadi Jurusan Teknik Komputer Politeknik ITB. Beberapa peristiwa penting sejak terbentuknya JTK-Politeknik ITB:</p>
+                            <ol>
+                              <li>Tahun 1989, berdasarkan SK Rektor ITB No. 203/SK/PT07.H/1/1989, semua pendidikan diploma di lingkungan ITB harus berada di bawah institusi Politeknik ITB. Kemudian PAT-JPK ITB dialihkan ke Politeknik ITB dan namanya menjadi Jurusan Teknik Komputer Politeknik ITB (JTK-Politeknik ITB).</li>
+                              <li>Tahun 1994, JTK mendirikan PATI (Pendidikan Aplikasi Teknologi Informatika). PATI kemudian menjadi kelas ekstensi sore hari dan saat ini seluruhnya telah melebur ke dalam kelas reguler JTK.</li>
+                              <li>Tahun 1995 (sampai sekarang), berdasarkan SK Rektor ITB, dosen-dosen JTK diberi tugas untuk memberikan bantuan pengajaran kepada Jurusan Teknik Sistem Informatika STT Telkom Bandung.</li>
+                              <li>Tahun 1996, JTK membangun stasion radio paket untuk akses jaringan komputer/internet untuk pemakaian internal di jurusan. Tahun 2001, JTK membangun backbone jaringan serat optik untuk memperlancar komunikasi se-kampus POLBAN, dan terakhir JTK juga membangun stasiun internet waveLAN.</li>
+                              <li>Tahun 1997, berdasarkan SK Mendikbud, Politeknik ITB berubah nama menjadi Politeknik Negeri Bandung (POLBAN). Inisial JTK-Politeknik ITB kemudian menjadi JTK POLBAN, dan sejak saat itu statusnya tidak lagi di bawah ITB, tapi telah mandiri sebagai suatu Perguruan Tinggi Negeri yang langsung di bawah Kementerian Pendidikan dan Kebudayaan.</li>
+                              <li>Tahun 1998, berdasarkan SK Mendikbud, nama jurusan berubah menjadi Jurusan Teknik Komputer dan Informatika (JTKI). Namun karena telah demikian familiar, inisial jurusan tetap JTK POLBAN dan bukan JTKI-POLBAN.</li>
+                              <li>Tahun 2000, JTK mulai mengembangkan Sistem Pendidikan dan Kurikulum Berbasis Kompetensi, antara lain dibutuhkan untuk mengantisipasi kebutuhan lapangan kerja yang profesional dan perkembangan teknologi informasi yang demikian pesat.</li>
+                              <li>Tahun 2001, pengajuan proposal JTK disetujui oleh Kementerian Pendidikan dan Kebudayaan sehingga mendapat kepercayaan memperoleh dana hibah untuk Proyek Pengembangan Manajemen Pendidikan Tinggi (Development Undergraduate for Education – DUE-Like) sebesar 1,4 milyar untuk periode tahun 2001—2005.</li>
+                              <li>Tahun 2001 (sampai sekarang), beberapa dosen JTK diberi tugas untuk menjadi asesor Badan Akreditasi Nasional Perguruan Tinggi (BAN-PT).</li>
+                              <li>Tahun 2002—2005, berdasarkan SK Direktur POLBAN, JTK diberi tugas untuk memberikan bimbingan/bantuan dalam pembentukan dan pengelolaan Jurusan Manajemen Informatika Politeknik Pos Bandung.</li>
+                              <li>Tahun 2005, pengajuan proposal JTK disetujui oleh Dikti sehingga mendapat kepercayaan memperoleh dana hibah kompetisi A3 sebesar 2,4 milyar untuk periode tahun 2006—2008.</li>
+                              <li>Tahun 2007, program studi D3 Teknik Informatika mendapatkan nilai akreditasi A dari BAN-PT.</li>
+                              <li>Tahun 2008, sebagai salah satu indikator dan kegiatan dalam hibah kompetisi A3, JTK tersertifikasi ISO dalam rangka pengendalian mutu.</li>
+                              <li>Tahun 2009, program studi D4 Teknik Informatika dibuka.</li>
+                              <li>Tahun 2011—2012, JTK menyelenggarakan program Rekognisi Pembelajaran Lampau untuk program studi D4 Teknik Informatika atas penugasan dari Dikti dalam rangka menginisiasi program pendidikan tersebut di Indonesia.</li>
+                              <li>Tahun 2012, program studi D4 Teknik Informatika mendapatkan nilai akreditasi B dari BAN-PT.</li>
+                              <li>Tahun 2016, program studi D4 Teknik Informatika direakreditasi dan mendapatkan nilai A dari BAN-PT.</li>
+                              <li>Tahun 2018, program studi D3 Teknik Informatika direakreditasi dan kembali mendapatkan nilai A dari BAN-PT.</li>
+                            </ol>
+                            <h3>Visi</h3>
+                            <p>JTK memiliki visi untuk menjadi jurusan unggulan dan terdepan di bidang pengkajian, penerapan dan pengembangan teknologi informasi, yang diakui baik di tingkat nasional maupun internasional.</p>
+                            <h3>Misi</h3>
+                            <ol>
+                              <li>Menyelenggarakan pendidikan yang menghasilkan sumber daya manusia yang profesional dibidang teknologi informasi;</li>
+                              <li>Menyelenggarakan program penelitian yang menghasilkan produk unggulan dibidang teknologi informasi;</li>
+                              <li>Meningkatkan pemanfaatan teknologi informasi di lingkungan internal maupun lingkungan eksternal (industri, pemerintah dan masyarakat umum);</li>
+                              <li>Menjadi tempat bagi sivitas akademika untuk saling bertukar gagasan dalam lingkungan yang kondusif.</li>
+                            </ol>
+                          </div>
                         </div> 
                       </div>                                   
                     </div>
@@ -202,16 +169,23 @@
                   <aside class="mu-sidebar">
                     <!-- start single sidebar -->
                     <div class="mu-single-sidebar">
-                      <h3>Daftar Berita</h3>
+                      <h3>Profil</h3>
                       <hr align="left">
                       <ul class="mu-sidebar-catg" style="list-style: none;">
-                        <li><a style="border-left: 6px solid #105194;" href="arsip-kerja-sama.php">Arsip Kerja Sama</a></li>
-                        <li><a href="form-kemitraan.php">Form Kemitraan</a></li>
-                        <li><a href="daftar-kemitraan.php">Daftar Kemitraan JTK Polban</a></li>
+                        <li><a style="border-left: 6px solid #105194;" href="profil-jurusan.php">Profil Jurusan</a></li>
+                        <li><a href="profil-d3.php">Profil Program Studi D3</a></li>
+                        <li><a href="profil-d4.php">Profil Program Studi D4</a></li>
                       </ul>
                     </div>
                     <hr class="mu-single-hr">
                     <!-- end single sidebar -->
+                    <!-- start single sidebar -->
+                    <div class="mu-single-sidebar">
+                      <h4>Ketua Jurusan</h4>
+                      <img src="../assets/img/profil/kajur.jpg" alt="Avatar">
+                      <p>Bambang Wisnuadhi, S.Si., M.T.</p>
+                    </div>
+                    <!-- end single sidebar -->                  
                   </aside>
                   <!-- / end sidebar -->
                 </div>
@@ -302,35 +276,18 @@
 </body>
 
 </html>
-<script type="text/javascript">
-  // Global Var
-  var web_strapi = "https://portaljtk.herokuapp.com";
 
-  window.onload = callAllFunc();
+<!-- <script type="text/javascript">
+  berita();
 
-  function callAllFunc(){
-    arsip_kerjasama();
-  }
-  function formatMyDate(value, locale = 'en-GB') {
-    return new Date(value).toLocaleDateString(locale);
-  }
-	async function arsip_kerjasama() {
+	async function berita() {
 	    // fetch data
-      let response = await fetch(web_strapi + '/articles/index');
+      let response = await fetch('http://localhost:1337/articles/terdampak-covid-19-mahasiswa-turun-tangan-dalam-misi-kemanusiaan');
 	    let data = await response.json();
-       var i = 1;
+	    console.log(data.judul);
 
       // set data
-      for (i; i <= 4; i++) {
-        console.log(data);
-        document.getElementById("berita"+ i +"_judul").innerHTML = data[i-1].judul;
-        document.getElementById("berita"+ i +"_author").innerHTML = data[i-1].author;
-        document.getElementById("berita"+ i +"_published").innerHTML = formatMyDate(data[i-1].published_at);
-        document.getElementById("berita"+ i +"_href").href = "berita_detail.php?id=" + data[i-1].slug;
-        document.getElementById("berita"+ i +"_img").src = web_strapi + data[i-1].attachment.url;
-        
-       }
+      document.getElementById("judul_utama").innerHTML = data.judul;
+      document.getElementById("slug_berita").innerHTML = data.slug;
 	}
-
-
-</script>
+</script> -->
